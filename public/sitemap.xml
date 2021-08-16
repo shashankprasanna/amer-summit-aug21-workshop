@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/1_setup/login_aws_account.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_build-train-tune-deploy/finetune_huggingface.html</loc>
+  </url>
+  
+  <url>
+    <loc>/appendix/docs.html</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/0_introduction.html</loc>
+  </url>
+  
+  <url>
+    <loc>/1_setup.html</loc>
+  </url>
+  
+  <url>
+    <loc>/1_setup/download_workshop_content.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_clean-up/cleanup.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_build-train-tune-deploy.html</loc>
+  </url>
+  
+  <url>
+    <loc>/appendix/resources.html</loc>
+  </url>
+  
+  <url>
+    <loc>/appendix/blogposts_videos.html</loc>
+  </url>
+  
+  <url>
+    <loc>/4_clean-up.html</loc>
+  </url>
+  
+  <url>
+    <loc>/appendix.html</loc>
+  </url>
+  
+  <url>
+    <loc>/categories.html</loc>
+  </url>
+  
+  <url>
+    <loc>/tags.html</loc>
+  </url>
+  
+</urlset>

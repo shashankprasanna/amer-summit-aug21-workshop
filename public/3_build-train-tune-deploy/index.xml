@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2. Amazon SageMaker and HuggingFace library on Getting Started with Amazon SageMaker Studio</title>
+    <link>/3_build-train-tune-deploy.html</link>
+    <description>Recent content in 2. Amazon SageMaker and HuggingFace library on Getting Started with Amazon SageMaker Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/3_build-train-tune-deploy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
+      <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
+      <description>Watch the livestream to follow along with the presenter
+ Open the following notebook to follow along Notebook: finetuning_huggingface.ipynb
+A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
+ Upgrade to the latest sagemaker version.
+!pip install -Uq sagemaker smdebugimport ast import json import boto3 import numpy as np import pandas as pd from datetime import datetime as dt from IPython.</description>
+    </item>
+    
+  </channel>
+</rss>

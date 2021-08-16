@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to Solving natural language processing problems with Amazon SageMaker Workshop at AMER Summit on Getting Started with Amazon SageMaker Studio</title>
+    <link>/</link>
+    <description>Recent content in Welcome to Solving natural language processing problems with Amazon SageMaker Workshop at AMER Summit on Getting Started with Amazon SageMaker Studio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1.1 Login to your temporary workshop AWS Account</title>
+      <link>/1_setup/login_aws_account.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_setup/login_aws_account.html</guid>
+      <description> Get your temporary AWS account Click on the link at the bottom of the browser as show below.
+Click on Accept Terms &amp;amp; Login Click on Email One-Time OTP (Allow for up to 2 mins to receive the passcode) Provide your email address Enter your OTP code Click on AWS Console Click on Open AWS Console In the AWS Console click on Amazon SageMaker Click on Amazon SageMaker Studio and then click on Open Studio You should now have Amazon SageMaker Studio interface open on your browser </description>
+    </item>
+    
+    <item>
+      <title>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
+      <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
+      <description>Watch the livestream to follow along with the presenter
+ Open the following notebook to follow along Notebook: finetuning_huggingface.ipynb
+A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
+ Upgrade to the latest sagemaker version.
+!pip install -Uq sagemaker smdebugimport ast import json import boto3 import numpy as np import pandas as pd from datetime import datetime as dt from IPython.</description>
+    </item>
+    
+    <item>
+      <title>Documentation resources</title>
+      <link>/appendix/docs.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/appendix/docs.html</guid>
+      <description>1. SageMaker SDK API guide https://sagemaker.readthedocs.io/en/stable/
+2. SageMaker Sample Notebooks on GitHub https://github.com/awslabs/amazon-sagemaker-examples
+3. SageMaker Developer Guide https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html
+4. SageMaker API Reference https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations_Amazon_SageMaker_Service.html</description>
+    </item>
+    
+    <item>
+      <title>1.2 Download workshop content</title>
+      <link>/1_setup/download_workshop_content.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1_setup/download_workshop_content.html</guid>
+      <description> Open a new terminal window Clone the workshop content In the terminal paste the following command to clone the workshop content repo:
+git clone https://github.com/shashankprasanna/sagemaker-amer-summit-workshop.git  Double click on the sagemaker-amer-summit-workshop folder Double click on notebooks folder Double click on the the first notebook Choose the Python 3 (Data Science kernel) and hit select </description>
+    </item>
+    
+    <item>
+      <title>Delete all resources</title>
+      <link>/4_clean-up/cleanup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/4_clean-up/cleanup.html</guid>
+      <description>This workshop creates the following resources:
+ SageMaker Endpoints S3 objects SageMaker apps  If you completed section 3.1, the &amp;ldquo;Delete resources&amp;rdquo; section at the end deletes running SageMaker Endpoints and all S3 objects created during the workshop.
+You can also delete the endpoints by navigating to AWS Console &amp;gt; Amazon SageMaker. In the left menu click on Inference &amp;gt; Endpoints. Select the endpoint you want to delete and click on Action &amp;gt; Delete.</description>
+    </item>
+    
+    <item>
+      <title>Technical papers</title>
+      <link>/appendix/resources.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/appendix/resources.html</guid>
+      <description> 1. Whitepaper on AI Fairness https://pages.awscloud.com/rs/112-TZM-766/images/Amazon.AI.Fairness.and.Explainability.Whitepaper.pdf 2. Paper on Debugging ML models https://www.amazon.science/publications/amazon-sagemaker-debugger-a-system-for-real-time-insights-into-machine-learning-model-training </description>
+    </item>
+    
+    <item>
+      <title>Blogposts and videos</title>
+      <link>/appendix/blogposts_videos.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/appendix/blogposts_videos.html</guid>
+      <description> 1. ML blog posts https://medium.com/@shashankprasanna 2. SageMaker Clarify Interview at re:invent 2020 with Principal Scientist at AWS AI   3. SageMaker Debugger Interview at re:invent 2020 with Principal PM at AWS AI   4. AWS Blog posts https://aws.amazon.com/blogs/machine-learning/ </description>
+    </item>
+    
+  </channel>
+</rss>

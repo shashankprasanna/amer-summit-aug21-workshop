@@ -1,16 +1,15 @@
-# nlp_on_sagemaker
+# Locally host the workshop content
 
-- [X] Text classification, with 
-- [X] pick from BERT family (e.g. DistilBERT)
-- [X] Women’s clothing reviews dataset
-- [X] SageMaker pre-processing if required do it in the Studio notebook
-- [X] SageMaker managed training with HuggingFace integration
-- [X] Managed Spot training + checkpointing
-- [X] plot metrics (optional)
-- [ ] ~~Explainability: Clarify SHAP values (optional)~~
-- [X] hosting endpoints with HF managed endpoints
-- [X] show python SDK
-- [X] boto3 for testing the endpoint
-- [X] Profiler
-- [ ] neo (optional)
-- [ ] elastic inference (optional)
+1. Download and install [Hugo](https://gohugo.io/getting-started/installing/)
+2. Clone this repo:
+```
+git clone --recurse-submodules https://github.com/shashankprasanna/sagemaker-amer-summit-workshop.git
+```
+3. Host the workshop locally
+```
+cd sagemaker-amer-summit-workshop
+hugo serve
+```
+4. Open your favorite browser and navigate to `http://localhost:1313/`
+
+Jupyter Notebook are in the `notebooks` folder

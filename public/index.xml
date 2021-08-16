@@ -21,16 +21,15 @@ Click on Accept Terms &amp;amp; Login Click on Email One-Time OTP (Allow for up 
     </item>
     
     <item>
-      <title>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
-      <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
+      <title>3.1 Prepare your dataset and upload it to Amazon S3</title>
+      <link>/3_build-train-tune-deploy/prepare_dataset.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
+      <guid>/3_build-train-tune-deploy/prepare_dataset.html</guid>
       <description>Watch the livestream to follow along with the presenter
- Open the following notebook to follow along Notebook: finetuning_huggingface.ipynb
+ Open the following notebook to follow along Notebook: 1_prepare_dataset.ipynb
 A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
- Upgrade to the latest sagemaker version.
-!pip install -Uq sagemaker smdebugimport ast import json import boto3 import numpy as np import pandas as pd from datetime import datetime as dt from IPython.</description>
+ Preparing your dataset import sagemaker import boto3 import pandas as pd import numpy as npsess = boto3.Session() sagemaker_session = sagemaker.</description>
     </item>
     
     <item>
@@ -52,7 +51,20 @@ A copy of the code from the notebook is also available below, if you prefer buil
       
       <guid>/1_setup/download_workshop_content.html</guid>
       <description> Open a new terminal window Clone the workshop content In the terminal paste the following command to clone the workshop content repo:
-git clone https://github.com/shashankprasanna/sagemaker-amer-summit-workshop.git  Double click on the sagemaker-amer-summit-workshop folder Double click on notebooks folder Double click on the the first notebook Choose the Python 3 (Data Science kernel) and hit select </description>
+git clone https://github.com/shashankprasanna/amer-summit-aug21-workshop.git  Double click on the amer-summit-aug21-workshop.git folder Double click on notebooks folder Double click on the the first notebook Choose the Python 3 (Data Science kernel) and hit select </description>
+    </item>
+    
+    <item>
+      <title>3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
+      <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
+      <description>Watch the livestream to follow along with the presenter
+ Open the following notebook to follow along Notebook: 2_finetune_deploy_huggingface
+A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
+ Finetuning HuggingFace models with Amazon SageMaker
+# Install or upgrade sagemaker sdk and sagemaker debugger sdk # Ignore warnings related to pip !</description>
     </item>
     
     <item>
@@ -81,7 +93,7 @@ You can also delete the endpoints by navigating to AWS Console &amp;gt; Amazon S
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/appendix/blogposts_videos.html</guid>
-      <description> 1. ML blog posts https://medium.com/@shashankprasanna 2. SageMaker Clarify Interview at re:invent 2020 with Principal Scientist at AWS AI   3. SageMaker Debugger Interview at re:invent 2020 with Principal PM at AWS AI   4. AWS Blog posts https://aws.amazon.com/blogs/machine-learning/ </description>
+      <description> 1. ML blog posts https://medium.com/@shashankprasanna 2. AWS Blog posts https://aws.amazon.com/blogs/machine-learning/ </description>
     </item>
     
   </channel>

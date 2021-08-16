@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>/3_build-train-tune-deploy/finetune_huggingface.html</loc>
+    <loc>/3_build-train-tune-deploy/prepare_dataset.html</loc>
   </url>
   
   <url>
@@ -28,6 +28,10 @@
   
   <url>
     <loc>/1_setup/download_workshop_content.html</loc>
+  </url>
+  
+  <url>
+    <loc>/3_build-train-tune-deploy/finetune_huggingface.html</loc>
   </url>
   
   <url>

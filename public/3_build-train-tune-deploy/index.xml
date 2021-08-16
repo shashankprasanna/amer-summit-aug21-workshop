@@ -11,16 +11,28 @@
     
     
     <item>
-      <title>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
+      <title>3.1 Prepare your dataset and upload it to Amazon S3</title>
+      <link>/3_build-train-tune-deploy/prepare_dataset.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/3_build-train-tune-deploy/prepare_dataset.html</guid>
+      <description>Watch the livestream to follow along with the presenter
+ Open the following notebook to follow along Notebook: 1_prepare_dataset.ipynb
+A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
+ Preparing your dataset import sagemaker import boto3 import pandas as pd import numpy as npsess = boto3.Session() sagemaker_session = sagemaker.</description>
+    </item>
+    
+    <item>
+      <title>3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
       <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
       <description>Watch the livestream to follow along with the presenter
- Open the following notebook to follow along Notebook: finetuning_huggingface.ipynb
+ Open the following notebook to follow along Notebook: 2_finetune_deploy_huggingface
 A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
- Upgrade to the latest sagemaker version.
-!pip install -Uq sagemaker smdebugimport ast import json import boto3 import numpy as np import pandas as pd from datetime import datetime as dt from IPython.</description>
+ Finetuning HuggingFace models with Amazon SageMaker
+# Install or upgrade sagemaker sdk and sagemaker debugger sdk # Ignore warnings related to pip !</description>
     </item>
     
   </channel>

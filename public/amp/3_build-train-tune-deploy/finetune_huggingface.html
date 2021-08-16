@@ -15,25 +15,25 @@
     <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
 
-    {0xc000718800 0xc000450d40}
-    <title>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library :: Getting Started with Amazon SageMaker Studio</title>
+    {0xc00073a300 0xc00000fdc0}
+    <title>3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library :: Getting Started with Amazon SageMaker Studio</title>
 
     
-    <link href="../../css/nucleus.css?1629116318" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1629116318" rel="stylesheet">
-    <link href="../../css/hybrid.css?1629116318" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1629116318" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1629116318" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1629116318" rel="stylesheet">
-    <link href="../../css/theme.css?1629116318" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1629116318" rel="stylesheet">
-    <link href="../../css/jquery-ui.min.css?1629116318" rel="stylesheet">
+    <link href="../../css/nucleus.css?1629119257" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1629119257" rel="stylesheet">
+    <link href="../../css/hybrid.css?1629119257" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1629119257" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1629119257" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1629119257" rel="stylesheet">
+    <link href="../../css/theme.css?1629119257" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1629119257" rel="stylesheet">
+    <link href="../../css/jquery-ui.min.css?1629119257" rel="stylesheet">
     
-      <link href="../../css/theme-mine.css?1629116318" rel="stylesheet">
+      <link href="../../css/theme-mine.css?1629119257" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1629116318"></script>
-    <script src="../../js/jquery-ui-1.12.1.min.js?1629116318"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1629119257"></script>
+    <script src="../../js/jquery-ui-1.12.1.min.js?1629119257"></script>
 
 
     <style type="text/css">
@@ -61,14 +61,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1629116318"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1629116318"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1629119257"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1629119257"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1629116318"></script>
+<script type="text/javascript" src="../../js/search.js?1629119257"></script>
 
     
   </div>
@@ -213,9 +213,30 @@
  
   
     
-      <li data-nav-id="/amp/3_build-train-tune-deploy/finetune_huggingface.html" title="3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library" class="dd-item active">
+      <li data-nav-id="/amp/3_build-train-tune-deploy/prepare_dataset.html" title="3.1 Prepare your dataset and upload it to Amazon S3" class="dd-item ">
+        <a href="../../amp/3_build-train-tune-deploy/prepare_dataset.html">
+        3.1 Prepare your dataset and upload it to Amazon S3
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/amp/3_build-train-tune-deploy/finetune_huggingface.html" title="3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library" class="dd-item active">
         <a href="../../amp/3_build-train-tune-deploy/finetune_huggingface.html">
-        3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library
+        3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library
         
         </a>
     </li>
@@ -431,7 +452,7 @@
             
           
           
-            <a href='../../amp/'>Welcome to Solving natural language processing problems with Amazon SageMaker Workshop at AMER Summit</a> > <a href='../../3_build-train-tune-deploy.html'>2. Amazon SageMaker and HuggingFace library</a> > 3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library
+            <a href='../../amp/'>Welcome to Solving natural language processing problems with Amazon SageMaker Workshop at AMER Summit</a> > <a href='../../3_build-train-tune-deploy.html'>2. Amazon SageMaker and HuggingFace library</a> > 3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library
           
         
           
@@ -448,16 +469,13 @@
 <li>
 <ul>
 <li><a href="#open-the-following-notebook-to-follow-along">Open the following notebook to follow along</a></li>
-</ul></li>
-<li><a href="#downloading-the-dataset">Downloading the Dataset</a>
-<ul>
 <li><a href="#prepare-a-huggingface-transformers-fine-tuning-script">Prepare a HuggingFace Transformers fine-tuning script.</a></li>
 <li><a href="#create-an-huggingface-estimator">Create an HuggingFace Estimator</a>
 <ul>
 <li><a href="#configure-rules">Configure rules</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#excute-the-fine-tuning-job">Excute the fine-tuning Job</a>
+<li><a href="#execute-the-fine-tuning-job">Execute the fine-tuning Job</a>
 <ul>
 <li><a href="#accessing-training-metrics">Accessing Training Metrics</a></li>
 <li><a href="#analyze-profiling-data">Analyze Profiling Data</a>
@@ -470,8 +488,8 @@
 <li><a href="#evaluate-predictions-on-the-test-set">Evaluate predictions on the test set</a></li>
 <li><a href="#invoke-the-endpoint-with-the-python-sdk">Invoke the endpoint with the Python SDK</a></li>
 <li><a href="#alternative-invoke-the-endpoint-with-boto3">Alternative: invoke the endpoint with boto3</a></li>
+<li><a href="#delete-endpoint">Delete endpoint</a></li>
 </ul></li>
-<li><a href="#clean-up">Clean up</a></li>
 </ul>
 </nav>
     </div>
@@ -485,7 +503,7 @@
         
         <div id="body-inner">
           
-            <h1>3.1 Train and fine-tune NLP models with SageMaker and HuggingFace library</h1>
+            <h1>3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library</h1>
           
 
         
@@ -500,21 +518,23 @@
 
 <h2 id="open-the-following-notebook-to-follow-along">Open the following notebook to follow along</h2>
 
-<p>Notebook: <code>finetuning_huggingface.ipynb</code></p>
+<p>Notebook: <code>2_finetune_deploy_huggingface</code></p>
 
-<p><img src="../../images/builtin/builtin.png" alt="" /></p>
+<p><img src="../../images/setup/setup16.png" alt="" /></p>
 
 
 <div class="notices info" ><p>A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.</p>
 </div>
 
 
-<p>Upgrade to the latest <code>sagemaker</code> version.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">!</span>pip install <span style="color:#f92672">-</span>Uq sagemaker smdebug</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> ast
-<span style="color:#f92672">import</span> json
-<span style="color:#f92672">import</span> boto3
+<p>Finetuning HuggingFace models with Amazon SageMaker</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Install or upgrade sagemaker sdk and sagemaker debugger sdk</span>
+<span style="color:#75715e"># Ignore warnings related to pip</span>
+<span style="color:#960050;background-color:#1e0010">!</span>pip install <span style="color:#f92672">-</span>Uq sagemaker smdebug</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> boto3
+<span style="color:#f92672">import</span> time
 <span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
 <span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd
+<span style="color:#f92672">import</span> json
 <span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime <span style="color:#66d9ef">as</span> dt
 <span style="color:#f92672">from</span> IPython.display <span style="color:#f92672">import</span> FileLink
 
@@ -528,203 +548,45 @@
 <span style="color:#f92672">from</span> smdebug.profiler.analysis.notebook_utils.timeline_charts <span style="color:#f92672">import</span> TimelineCharts
 
 <span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> classification_report</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># permissions</span>
-sess <span style="color:#f92672">=</span> sagemaker<span style="color:#f92672">.</span>Session()
+sess <span style="color:#f92672">=</span> boto3<span style="color:#f92672">.</span>Session()
+sagemaker_session <span style="color:#f92672">=</span> sagemaker<span style="color:#f92672">.</span>Session()
 role <span style="color:#f92672">=</span> sagemaker<span style="color:#f92672">.</span>get_execution_role()
-s3_client <span style="color:#f92672">=</span> boto3<span style="color:#f92672">.</span>client(<span style="color:#e6db74">&#39;s3&#39;</span>)
 
-
-bucket <span style="color:#f92672">=</span> sess<span style="color:#f92672">.</span>default_bucket()
-prefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;huggingface_classifier&#34;</span>
-sess <span style="color:#f92672">=</span> sagemaker<span style="color:#f92672">.</span>Session(default_bucket<span style="color:#f92672">=</span>bucket)
+bucket <span style="color:#f92672">=</span> sagemaker_session<span style="color:#f92672">.</span>default_bucket()
+prefix <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;sagemaker_huggingface_workshop&#34;</span>
 
 <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;sagemaker role arn: {role}&#34;</span>)
-<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;sagemaker bucket: {sess.default_bucket()}&#34;</span>)
-<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;sagemaker session region: {sess.boto_region_name}&#34;</span>)</code></pre></div>
-<h1 id="downloading-the-dataset">Downloading the Dataset</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;./data/Womens Clothing E-Commerce Reviews.csv&#39;</span>)
-df <span style="color:#f92672">=</span> df[[<span style="color:#e6db74">&#39;Review Text&#39;</span>,	<span style="color:#e6db74">&#39;Rating&#39;</span>]]
-df<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;text&#39;</span>, <span style="color:#e6db74">&#39;label&#39;</span>]
-df[<span style="color:#e6db74">&#39;label&#39;</span>] <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#39;label&#39;</span>] <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>
-
-df <span style="color:#f92672">=</span> df<span style="color:#f92672">.</span>dropna()
-
-train, validate, test <span style="color:#f92672">=</span> \
-              np<span style="color:#f92672">.</span>split(df<span style="color:#f92672">.</span>sample(frac<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>),
-                       [int(<span style="color:#f92672">.</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>len(df)), int(<span style="color:#f92672">.</span><span style="color:#ae81ff">8</span><span style="color:#f92672">*</span>len(df))])
-
-train<span style="color:#f92672">.</span>shape, validate<span style="color:#f92672">.</span>shape, test<span style="color:#f92672">.</span>shape</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">train<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#39;./data/train.csv&#39;</span>, index<span style="color:#f92672">=</span>False)
-validate<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#39;./data/validate.csv&#39;</span>, index<span style="color:#f92672">=</span>False)
-test<span style="color:#f92672">.</span>to_csv(<span style="color:#e6db74">&#39;./data/test.csv&#39;</span>, index<span style="color:#f92672">=</span>False)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s3_client<span style="color:#f92672">.</span>upload_file(<span style="color:#e6db74">&#39;./data/train.csv&#39;</span>, bucket,
-                      f<span style="color:#e6db74">&#39;{prefix}/data/train.csv&#39;</span>)
-s3_client<span style="color:#f92672">.</span>upload_file(<span style="color:#e6db74">&#39;./data/validate.csv&#39;</span>, bucket,
-                      f<span style="color:#e6db74">&#39;{prefix}/data/validate.csv&#39;</span>)
-s3_client<span style="color:#f92672">.</span>upload_file(<span style="color:#e6db74">&#39;./data/test.csv&#39;</span>, bucket,
-                      f<span style="color:#e6db74">&#39;{prefix}/data/test.csv&#39;</span>)</code></pre></div>
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;sagemaker bucket: {sagemaker_session.default_bucket()}&#34;</span>)
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;sagemaker session region: {sagemaker_session.boto_region_name}&#34;</span>)</code></pre></div>
 <h2 id="prepare-a-huggingface-transformers-fine-tuning-script">Prepare a HuggingFace Transformers fine-tuning script.</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">!</span>mkdir <span style="color:#f92672">./</span>src</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">%%</span>writefile src<span style="color:#f92672">/</span>train<span style="color:#f92672">.</span>py
 
-<span style="color:#f92672">import</span> os
-<span style="color:#f92672">import</span> sys
-<span style="color:#f92672">import</span> logging
-<span style="color:#f92672">import</span> argparse
-<span style="color:#f92672">from</span> datasets <span style="color:#f92672">import</span> load_dataset
-<span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> accuracy_score, precision_recall_fscore_support
-<span style="color:#f92672">from</span> transformers.trainer_utils <span style="color:#f92672">import</span> get_last_checkpoint
-<span style="color:#f92672">from</span> transformers <span style="color:#f92672">import</span> AutoModelForSequenceClassification, Trainer, TrainingArguments, AutoTokenizer
-
-
-<span style="color:#75715e"># Set up logging</span>
-logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
-
-logging<span style="color:#f92672">.</span>basicConfig(
-    level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>getLevelName(<span style="color:#e6db74">&#34;INFO&#34;</span>),
-    handlers<span style="color:#f92672">=</span>[logging<span style="color:#f92672">.</span>StreamHandler(sys<span style="color:#f92672">.</span>stdout)],
-    format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>,
-)
-
-<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-
-    logger<span style="color:#f92672">.</span>info(sys<span style="color:#f92672">.</span>argv)
-
-    parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser()
-
-    <span style="color:#75715e"># hyperparameters sent by the client are passed as command-line arguments to the script.</span>
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--epochs&#34;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--train-batch-size&#34;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">32</span>)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--eval-batch-size&#34;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">64</span>)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--warmup_steps&#34;</span>, type<span style="color:#f92672">=</span>int, default<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--model_name&#34;</span>, type<span style="color:#f92672">=</span>str)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--learning_rate&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span><span style="color:#ae81ff">5e-5</span>)
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--output_dir&#34;</span>, type<span style="color:#f92672">=</span>str)
-
-    <span style="color:#75715e"># Data, model, and output directories</span>
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--output-data-dir&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SM_OUTPUT_DATA_DIR&#34;</span>])
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--model-dir&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SM_MODEL_DIR&#34;</span>])
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--n_gpus&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SM_NUM_GPUS&#34;</span>])
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--training_dir&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SM_CHANNEL_TRAIN&#34;</span>])
-    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#34;--test_dir&#34;</span>, type<span style="color:#f92672">=</span>str, default<span style="color:#f92672">=</span>os<span style="color:#f92672">.</span>environ[<span style="color:#e6db74">&#34;SM_CHANNEL_TEST&#34;</span>])
-
-    args, _ <span style="color:#f92672">=</span> parser<span style="color:#f92672">.</span>parse_known_args()
-
-    <span style="color:#75715e"># Set up logging</span>
-    logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(__name__)
-
-    logging<span style="color:#f92672">.</span>basicConfig(
-        level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>getLevelName(<span style="color:#e6db74">&#34;INFO&#34;</span>),
-        handlers<span style="color:#f92672">=</span>[logging<span style="color:#f92672">.</span>StreamHandler(sys<span style="color:#f92672">.</span>stdout)],
-        format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>,
-    )
-
-    <span style="color:#75715e"># download tokenizer</span>
-    tokenizer <span style="color:#f92672">=</span> AutoTokenizer<span style="color:#f92672">.</span>from_pretrained(args<span style="color:#f92672">.</span>model_name)
-
-    <span style="color:#75715e"># Load dataset</span>
-    train_file <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#34;{args.training_dir}/train.csv&#34;</span>
-    validate_file <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#34;{args.test_dir}/validate.csv&#34;</span>
-    dataset <span style="color:#f92672">=</span> load_dataset(<span style="color:#e6db74">&#39;csv&#39;</span>, data_files<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;train&#39;</span>: train_file,
-                                             <span style="color:#e6db74">&#39;test&#39;</span>: validate_file})
-
-    train_dataset <span style="color:#f92672">=</span> dataset[<span style="color:#e6db74">&#39;train&#39;</span>]
-    test_dataset <span style="color:#f92672">=</span> dataset[<span style="color:#e6db74">&#39;test&#39;</span>]
-    logger<span style="color:#f92672">.</span>info(f<span style="color:#e6db74">&#34; loaded train_dataset length is: {len(train_dataset)}&#34;</span>)
-    logger<span style="color:#f92672">.</span>info(f<span style="color:#e6db74">&#34; loaded test_dataset length is: {len(test_dataset)}&#34;</span>)
-
-
-    <span style="color:#75715e"># tokenizer helper function</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">tokenize</span>(batch):
-        <span style="color:#66d9ef">return</span> tokenizer(batch[<span style="color:#e6db74">&#39;text&#39;</span>], padding<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;max_length&#39;</span>, truncation<span style="color:#f92672">=</span>True)
-
-    <span style="color:#75715e"># tokenize dataset</span>
-    train_dataset <span style="color:#f92672">=</span> train_dataset<span style="color:#f92672">.</span>map(tokenize, batched<span style="color:#f92672">=</span>True)
-    test_dataset <span style="color:#f92672">=</span> test_dataset<span style="color:#f92672">.</span>map(tokenize, batched<span style="color:#f92672">=</span>True)
-
-
-    <span style="color:#75715e"># set format for pytorch</span>
-    train_dataset <span style="color:#f92672">=</span>  train_dataset<span style="color:#f92672">.</span>rename_column(<span style="color:#e6db74">&#34;label&#34;</span>, <span style="color:#e6db74">&#34;labels&#34;</span>)
-    train_dataset<span style="color:#f92672">.</span>set_format(<span style="color:#e6db74">&#39;torch&#39;</span>, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;input_ids&#39;</span>, <span style="color:#e6db74">&#39;attention_mask&#39;</span>, <span style="color:#e6db74">&#39;labels&#39;</span>])
-    test_dataset <span style="color:#f92672">=</span> test_dataset<span style="color:#f92672">.</span>rename_column(<span style="color:#e6db74">&#34;label&#34;</span>, <span style="color:#e6db74">&#34;labels&#34;</span>)
-    test_dataset<span style="color:#f92672">.</span>set_format(<span style="color:#e6db74">&#39;torch&#39;</span>, columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;input_ids&#39;</span>, <span style="color:#e6db74">&#39;attention_mask&#39;</span>, <span style="color:#e6db74">&#39;labels&#39;</span>])
-
-    logger<span style="color:#f92672">.</span>info(f<span style="color:#e6db74">&#34; loaded train_dataset length is: {len(train_dataset)}&#34;</span>)
-    logger<span style="color:#f92672">.</span>info(f<span style="color:#e6db74">&#34; loaded test_dataset length is: {len(test_dataset)}&#34;</span>)
-
-    <span style="color:#75715e"># compute metrics function for binary classification</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">compute_metrics</span>(pred):
-        labels <span style="color:#f92672">=</span> pred<span style="color:#f92672">.</span>label_ids
-        preds <span style="color:#f92672">=</span> pred<span style="color:#f92672">.</span>predictions<span style="color:#f92672">.</span>argmax(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
-        precision, recall, f1, _ <span style="color:#f92672">=</span> precision_recall_fscore_support(labels, preds, average<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;weighted&#34;</span>)
-        acc <span style="color:#f92672">=</span> accuracy_score(labels, preds)
-        <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;accuracy&#34;</span>: acc, <span style="color:#e6db74">&#34;f1&#34;</span>: f1, <span style="color:#e6db74">&#34;precision&#34;</span>: precision, <span style="color:#e6db74">&#34;recall&#34;</span>: recall}
-
-    <span style="color:#75715e"># download model from model hub</span>
-    model <span style="color:#f92672">=</span> AutoModelForSequenceClassification<span style="color:#f92672">.</span>from_pretrained(args<span style="color:#f92672">.</span>model_name, num_labels<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
-
-    <span style="color:#75715e"># define training args</span>
-    training_args <span style="color:#f92672">=</span> TrainingArguments(
-        output_dir<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>output_dir,
-        num_train_epochs<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>epochs,
-        per_device_train_batch_size<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>train_batch_size,
-        per_device_eval_batch_size<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>eval_batch_size,
-        warmup_steps<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>warmup_steps,
-        evaluation_strategy<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;epoch&#34;</span>,
-        logging_dir<span style="color:#f92672">=</span>f<span style="color:#e6db74">&#34;{args.output_data_dir}/logs&#34;</span>,
-        learning_rate<span style="color:#f92672">=</span>float(args<span style="color:#f92672">.</span>learning_rate),
-    )
-
-    <span style="color:#75715e"># create Trainer instance</span>
-    trainer <span style="color:#f92672">=</span> Trainer(
-        model<span style="color:#f92672">=</span>model,
-        args<span style="color:#f92672">=</span>training_args,
-        compute_metrics<span style="color:#f92672">=</span>compute_metrics,
-        train_dataset<span style="color:#f92672">=</span>train_dataset,
-        eval_dataset<span style="color:#f92672">=</span>test_dataset,
-    )
-
-    <span style="color:#75715e"># train model</span>
-    <span style="color:#66d9ef">if</span> get_last_checkpoint(args<span style="color:#f92672">.</span>output_dir) <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None:
-        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;***** continue training *****&#34;</span>)
-        trainer<span style="color:#f92672">.</span>train(resume_from_checkpoint<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>output_dir)
-    <span style="color:#66d9ef">else</span>:
-        trainer<span style="color:#f92672">.</span>train()
-    <span style="color:#75715e"># evaluate model</span>
-    eval_result <span style="color:#f92672">=</span> trainer<span style="color:#f92672">.</span>evaluate(eval_dataset<span style="color:#f92672">=</span>test_dataset)
-
-    <span style="color:#75715e"># writes eval result to file which can be accessed later in s3 ouput</span>
-    <span style="color:#66d9ef">with</span> open(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>join(args<span style="color:#f92672">.</span>output_data_dir, <span style="color:#e6db74">&#34;eval_results.txt&#34;</span>), <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> writer:
-        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;***** Eval results *****&#34;</span>)
-        <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> sorted(eval_result<span style="color:#f92672">.</span>items()):
-            writer<span style="color:#f92672">.</span>write(f<span style="color:#e6db74">&#34;{key} = {value}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>)
-
-    <span style="color:#75715e"># Saves the model to s3</span>
-    trainer<span style="color:#f92672">.</span>save_model(args<span style="color:#f92672">.</span>model_dir)
-    tokenizer<span style="color:#f92672">.</span>save_pretrained(args<span style="color:#f92672">.</span>model_dir)</code></pre></div>
+<p>The training script that performs fine tuning is located here: <code>src/train.py</code>
+Navigate to the source code location and open the <code>train.py</code> file. You can also go through it&rsquo;s contents by executing the cell below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#960050;background-color:#1e0010">!</span>pygmentize src<span style="color:#f92672">/</span>train<span style="color:#f92672">.</span>py</code></pre></div>
 <h2 id="create-an-huggingface-estimator">Create an HuggingFace Estimator</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># hyperparameters, which are passed into the training job</span>
 hyperparameters<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;epochs&#39;</span>: <span style="color:#ae81ff">1</span>,
                  <span style="color:#e6db74">&#39;train_batch_size&#39;</span>: <span style="color:#ae81ff">32</span>,
                  <span style="color:#e6db74">&#39;model_name&#39;</span>:<span style="color:#e6db74">&#39;distilbert-base-uncased&#39;</span>,
-                 <span style="color:#e6db74">&#39;output_dir&#39;</span>:<span style="color:#e6db74">&#39;/opt/ml/checkpoints&#39;</span>
                  }
 
-
-
 metric_definitions<span style="color:#f92672">=</span>[
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;loss&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;loss&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;learning_rate&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;learning_rate&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_loss&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_loss&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_accuracy&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_accuracy&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_f1&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_f1&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_precision&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_precision&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_recall&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_recall&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_runtime&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_runtime&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;loss&#39;</span>,                    <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;loss&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;learning_rate&#39;</span>,           <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;learning_rate&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_loss&#39;</span>,               <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_loss&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_accuracy&#39;</span>,           <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_accuracy&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_f1&#39;</span>,                 <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_f1&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_precision&#39;</span>,          <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_precision&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_recall&#39;</span>,             <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_recall&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_runtime&#39;</span>,            <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_runtime&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
     {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;eval_samples_per_second&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;eval_samples_per_second&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>},
-    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;epoch&#39;</span>, <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;epoch&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>}]</code></pre></div>
+    {<span style="color:#e6db74">&#39;Name&#39;</span>: <span style="color:#e6db74">&#39;epoch&#39;</span>,                   <span style="color:#e6db74">&#39;Regex&#39;</span>: <span style="color:#e6db74">&#34;&#39;epoch&#39;: ([0-9]+(.|e\-)[0-9]+),?&#34;</span>}]</code></pre></div>
 <h3 id="configure-rules">Configure rules</h3>
 
 <p>We specify the following rules:</p>
 
 <ul>
-<li>loss_not_decreasing: checks if loss is decreasing and triggers if the loss has not decreased by a certain persentage in the last few iterations</li>
+<li>loss_not_decreasing: checks if loss is decreasing and triggers if the loss has not decreased by a certain percentage in the last few iterations</li>
 <li>LowGPUUtilization: checks if GPU is under-utilizated</li>
 
 <li><p>ProfilerReport: runs the entire set of performance rules and create a final output report with further insights and recommendations.</p>
@@ -741,34 +603,37 @@ ProfilerRule<span style="color:#f92672">.</span>sagemaker(rule_configs<span styl
 <p>Debugger will capture detailed profiling information from step 5 to step 15. This information includes Horovod metrics, dataloading, preprocessing, operators running on CPU and GPU.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Specify a profiler configuration</span>
 profiler_config <span style="color:#f92672">=</span> ProfilerConfig(
-    system_monitor_interval_millis<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, framework_profile_params<span style="color:#f92672">=</span>FrameworkProfile(num_steps<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+    system_monitor_interval_millis<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>,
+    framework_profile_params<span style="color:#f92672">=</span>FrameworkProfile(num_steps<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
 )</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># s3 uri where our checkpoints will be uploaded during training</span>
-job_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;using-spot&#34;</span>
+job_name    <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;huggingface-spot-{time.strftime(&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%H-%M-%S&#34;, time.gmtime())}&#39;</span>
 checkpoint_s3_uri <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;s3://{bucket}/{prefix}/{job_name}/checkpoints&#39;</span>
+output_path <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;s3://{bucket}/{prefix}/training_jobs&#39;</span>
+
 
 <span style="color:#75715e"># create the Estimator</span>
-huggingface_estimator <span style="color:#f92672">=</span> HuggingFace(entry_point<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;train.py&#39;</span>,
-                            source_dir<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./src&#39;</span>,
-                            instance_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ml.p3.2xlarge&#39;</span>,
-                            size<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>,
-                            instance_count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
-                            base_job_name<span style="color:#f92672">=</span>job_name,
-                            checkpoint_s3_uri<span style="color:#f92672">=</span>checkpoint_s3_uri,
-<span style="color:#75715e">#                             use_spot_instances=True,</span>
-<span style="color:#75715e">#                             max_wait=3600, # This should be equal to or greater than max_run in seconds&#39;</span>
-<span style="color:#75715e">#                             max_run=1000, # expected max run in seconds</span>
-                            role<span style="color:#f92672">=</span>role,
-                            transformers_version<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;4.6&#39;</span>,
-                            pytorch_version<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;1.7&#39;</span>,
-                            py_version<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;py36&#39;</span>,
-                            hyperparameters <span style="color:#f92672">=</span> hyperparameters,
-                            metric_definitions<span style="color:#f92672">=</span>metric_definitions,
-                            <span style="color:#75715e"># Debugger-specific parameters</span>
-                            profiler_config<span style="color:#f92672">=</span>profiler_config,
-                            debugger_hook_config<span style="color:#f92672">=</span>hook_config,
-                            rules<span style="color:#f92672">=</span>rules,
-                            )</code></pre></div>
-<h1 id="excute-the-fine-tuning-job">Excute the fine-tuning Job</h1>
+huggingface_estimator <span style="color:#f92672">=</span> HuggingFace(entry_point          <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;train.py&#39;</span>,
+                                    source_dir           <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;src&#39;</span>,
+                                    output_path          <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;{output_path}/&#39;</span>,
+                                    code_location        <span style="color:#f92672">=</span> output_path,
+                                    role                 <span style="color:#f92672">=</span> role,
+                                    base_job_name        <span style="color:#f92672">=</span> job_name,
+                                    checkpoint_s3_uri    <span style="color:#f92672">=</span> checkpoint_s3_uri,
+                                    instance_type        <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ml.p3.2xlarge&#39;</span>,
+                                    instance_count       <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+<span style="color:#75715e">#                                     use_spot_instances   = True,</span>
+<span style="color:#75715e">#                                     max_wait             = 3600, # This should be equal to or greater than max_run in seconds</span>
+<span style="color:#75715e">#                                     max_run              = 1000, # expected max run in seconds</span>
+                                    transformers_version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;4.6&#39;</span>,
+                                    pytorch_version      <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1.7&#39;</span>,
+                                    py_version           <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;py36&#39;</span>,
+                                    hyperparameters      <span style="color:#f92672">=</span> hyperparameters,
+                                    metric_definitions   <span style="color:#f92672">=</span> metric_definitions,
+                                    <span style="color:#75715e"># Debugger-specific parameters</span>
+                                    profiler_config      <span style="color:#f92672">=</span> profiler_config,
+                                    rules                <span style="color:#f92672">=</span> rules
+                                   )</code></pre></div>
+<h1 id="execute-the-fine-tuning-job">Execute the fine-tuning Job</h1>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;train&#39;</span>: f<span style="color:#e6db74">&#34;s3://{bucket}/{prefix}/data/train.csv&#34;</span>,
         <span style="color:#e6db74">&#39;test&#39;</span>: f<span style="color:#e6db74">&#34;s3://{bucket}/{prefix}/data/validate.csv&#34;</span>
        }
@@ -801,15 +666,13 @@ view_timeline_charts <span style="color:#f92672">=</span> TimelineCharts(
 
 <p>The profiling report rule will create an html report profiler-report.html with a summary of builtin rules and recommenades of next steps. You can find this report in your S3 bucket.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">rule_output_path <span style="color:#f92672">=</span> huggingface_estimator<span style="color:#f92672">.</span>output_path <span style="color:#f92672">+</span> huggingface_estimator<span style="color:#f92672">.</span>latest_training_job<span style="color:#f92672">.</span>job_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;/rule-output&#34;</span>
-<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;You will find the profiler report in {rule_output_path}&#34;</span>)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">s3_client<span style="color:#f92672">.</span>download_file(Bucket<span style="color:#f92672">=</span>bucket,
-                        Key<span style="color:#f92672">=</span>f<span style="color:#e6db74">&#39;using-spot-2021-07-23-17-16-24-982/rule-output/ProfilerReport/profiler-output/profiler-report.html&#39;</span>,
-                        Filename<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;./debugger_report.html&#39;</span>)
-
-display(<span style="color:#e6db74">&#34;Click link below to view the debugger repot.&#34;</span>, FileLink(<span style="color:#e6db74">&#34;./debugger_report.html&#34;</span>))</code></pre></div>
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;You will find the profiler report in {rule_output_path}&#34;</span>)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sagemaker_session<span style="color:#f92672">.</span>download_data(path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;.&#39;</span>,
+                               bucket <span style="color:#f92672">=</span> bucket,
+                               key_prefix <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;{prefix}/training_jobs/{huggingface_estimator.latest_training_job.job_name}/rule-output/ProfilerReport/profiler-output/profiler-report.html&#39;</span>)</code></pre></div>
 <p>For more information about how to download and open the Debugger profiling report, see <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-profiling-report.html" target="_blank">SageMaker Debugger Profiling Report</a> in the SageMaker developer guide.</p>
 
 <h1 id="deploying-the-endpoint">Deploying the endpoint</h1>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">endpoint_name <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;huggingface-finetune-{dt.today().strftime(&#39;</span><span style="color:#f92672">%</span>Y<span style="color:#f92672">-%</span>m<span style="color:#f92672">-%</span>d<span style="color:#e6db74">&#39;)}&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">endpoint_name <span style="color:#f92672">=</span> f<span style="color:#e6db74">&#39;huggingface-finetune-{time.strftime(&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">-%H-%M-%S&#34;, time.gmtime())}&#39;</span>
 
 <span style="color:#75715e"># create Hugging Face Model Class</span>
 huggingface_model <span style="color:#f92672">=</span> HuggingFaceModel(
@@ -827,8 +690,11 @@ predictor <span style="color:#f92672">=</span> huggingface_model<span style="col
     endpoint_name <span style="color:#f92672">=</span> endpoint_name
 )</code></pre></div>
 <h2 id="evaluate-predictions-on-the-test-set">Evaluate predictions on the test set</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pred_list <span style="color:#f92672">=</span> []
-<span style="color:#66d9ef">for</span> idx, row <span style="color:#f92672">in</span> test<span style="color:#f92672">.</span>head()<span style="color:#f92672">.</span>iterrows():
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#39;data/test.csv&#39;</span>)
+test<span style="color:#f92672">.</span>head()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pred_list <span style="color:#f92672">=</span> []
+test_small <span style="color:#f92672">=</span> test[:<span style="color:#ae81ff">500</span>] <span style="color:#75715e"># Predicting only on 100 rows, change this to predict on a larger number of rows</span>
+
+<span style="color:#66d9ef">for</span> idx, row <span style="color:#f92672">in</span> test_small<span style="color:#f92672">.</span>iterrows():
     payload <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;inputs&#34;</span>: row[<span style="color:#e6db74">&#39;text&#39;</span>]}
     pred <span style="color:#f92672">=</span> predictor<span style="color:#f92672">.</span>predict(payload)[<span style="color:#ae81ff">0</span>]
 
@@ -836,14 +702,14 @@ predictor <span style="color:#f92672">=</span> huggingface_model<span style="col
     pred[<span style="color:#e6db74">&#39;prediction&#39;</span>] <span style="color:#f92672">=</span> pred<span style="color:#f92672">.</span>pop(<span style="color:#e6db74">&#39;label&#39;</span>)
     <span style="color:#75715e"># convert prediction value to int</span>
     pred[<span style="color:#e6db74">&#39;prediction&#39;</span>] <span style="color:#f92672">=</span> int(pred[<span style="color:#e6db74">&#39;prediction&#39;</span>]<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;LABEL_&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>))
-    pred_list<span style="color:#f92672">.</span>append(pred)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test[<span style="color:#e6db74">&#39;prediction&#39;</span>] <span style="color:#f92672">=</span> pred_list
-df_test <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([test<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;prediction&#39;</span>], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>), test[<span style="color:#e6db74">&#39;prediction&#39;</span>]<span style="color:#f92672">.</span>apply(pd<span style="color:#f92672">.</span>Series)], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(classification_report(df_test[<span style="color:#e6db74">&#39;label&#39;</span>], df_test[<span style="color:#e6db74">&#39;prediction&#39;</span>]))</code></pre></div>
+    pred_list<span style="color:#f92672">.</span>append(pred)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">test_small[<span style="color:#e6db74">&#39;prediction&#39;</span>] <span style="color:#f92672">=</span> pred_list
+df_test <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([test_small<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;prediction&#39;</span>], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>), test_small[<span style="color:#e6db74">&#39;prediction&#39;</span>]<span style="color:#f92672">.</span>apply(pd<span style="color:#f92672">.</span>Series)], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">print</span>(classification_report(df_test[<span style="color:#e6db74">&#39;label&#39;</span>], df_test[<span style="color:#e6db74">&#39;prediction&#39;</span>]))</code></pre></div>
 <h2 id="invoke-the-endpoint-with-the-python-sdk">Invoke the endpoint with the Python SDK</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># client = boto3.client(&#39;sagemaker&#39;)</span>
 <span style="color:#75715e"># endpoint = client.list_endpoints()[&#39;Endpoints&#39;]</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">payload <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;inputs&#34;</span>: [test[<span style="color:#e6db74">&#39;text&#39;</span>]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>]]}
 
 predictor <span style="color:#f92672">=</span> HuggingFacePredictor(endpoint_name<span style="color:#f92672">=</span>endpoint_name,
-                                sagemaker_session<span style="color:#f92672">=</span>sess
+                                sagemaker_session<span style="color:#f92672">=</span>sagemaker_session
                                 )
 result <span style="color:#f92672">=</span> predictor<span style="color:#f92672">.</span>predict(data<span style="color:#f92672">=</span>payload)[<span style="color:#ae81ff">0</span>]
 <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Predicted </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{result[&#39;label&#39;]}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m with score of </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{round(result[&#39;score&#39;], 2)}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m. Real label is </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{test[&#39;label&#39;].iloc[0]}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m. Full sentence:</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">{test[&#39;text&#39;].iloc[0]}&#34;</span>)</code></pre></div>
@@ -858,9 +724,9 @@ response <span style="color:#f92672">=</span> client<span style="color:#f92672">
                           ContentType<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;application/json&#39;</span>
                          )
 
-result <span style="color:#f92672">=</span> ast<span style="color:#f92672">.</span>literal_eval(response[<span style="color:#e6db74">&#39;Body&#39;</span>]<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>decode())[<span style="color:#ae81ff">0</span>]
+result <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(response[<span style="color:#e6db74">&#39;Body&#39;</span>]<span style="color:#f92672">.</span>read())[<span style="color:#ae81ff">0</span>]
 <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Predicted </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{result[&#39;label&#39;]}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m with score of </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{round(result[&#39;score&#39;], 2)}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m. Real label is </span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[1m{test[&#39;label&#39;].iloc[0]}</span><span style="color:#ae81ff">\033</span><span style="color:#e6db74">[0m. Full sentence:</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">{test[&#39;text&#39;].iloc[0]}&#34;</span>)</code></pre></div>
-<h1 id="clean-up">Clean up</h1>
+<h2 id="delete-endpoint">Delete endpoint</h2>
 
 <p>Make sure you delete the SageMaker endpoints to avoid unnecessary costs:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># predictor.delete_endpoint()</span></code></pre></div>
@@ -980,6 +846,22 @@ result <span style="color:#f92672">=</span> ast<span style="color:#f92672">.</sp
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1101,7 +983,7 @@ result <span style="color:#f92672">=</span> ast<span style="color:#f92672">.</sp
 
 
         
-            <a class="nav nav-prev" href="../../3_build-train-tune-deploy.html" title="2. Amazon SageMaker and HuggingFace library"> <i class="fas fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="../../amp/3_build-train-tune-deploy/prepare_dataset.html" title="3.1 Prepare your dataset and upload it to Amazon S3"> <i class="fas fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="../../4_clean-up.html" title="3. Clean up resources" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
@@ -1113,19 +995,19 @@ result <span style="color:#f92672">=</span> ast<span style="color:#f92672">.</sp
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1629116318"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1629116318"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1629116318"></script>
-    <script src="../../js/jquery.sticky.js?1629116318"></script>
-    <script src="../../js/featherlight.min.js?1629116318"></script>
-    <script src="../../js/highlight.pack.js?1629116318"></script>
+    <script src="../../js/clipboard.min.js?1629119258"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1629119258"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1629119258"></script>
+    <script src="../../js/jquery.sticky.js?1629119258"></script>
+    <script src="../../js/featherlight.min.js?1629119258"></script>
+    <script src="../../js/highlight.pack.js?1629119258"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1629116318"></script>
-    <script src="../../js/learn.js?1629116318"></script>
-    <script src="../../js/hugo-learn.js?1629116318"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1629119258"></script>
+    <script src="../../js/learn.js?1629119258"></script>
+    <script src="../../js/hugo-learn.js?1629119258"></script>
 
-    <link href="../../mermaid/mermaid.css?1629116318" type="text/css" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.min.js?1629116318"></script>
+    <link href="../../mermaid/mermaid.css?1629119258" type="text/css" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.min.js?1629119258"></script>
     <script>
 	var config = {
         startOnLoad:true,

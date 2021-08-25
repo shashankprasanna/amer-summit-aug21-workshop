@@ -9,7 +9,7 @@ This workshop creates the following resources:
 * S3 objects
 * SageMaker apps
 
-If you completed section 3.1, the "Delete resources" section at the end deletes running SageMaker Endpoints and all S3 objects created during the workshop.
+If you completed section 2.2, the "Delete resources" section at the end deletes running SageMaker Endpoints and all S3 objects created during the workshop.
 
 You can also delete the endpoints by navigating to AWS Console > Amazon SageMaker. In the left menu click on Inference > Endpoints. Select the endpoint you want to delete and click on Action > Delete.
 

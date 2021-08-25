@@ -10,7 +10,7 @@ weight: 1
 
 | Shashank Prasanna, <br>Sr. Developer Advocate, AI/ML      | Amir Imani,<br>AI/ML Specialist SA |
 | ----------- | ----------- |
-| [Twitter: @shshnkp](https://twitter.com/shshnkp)<br>[linkedin.com/in/shashankprasanna](https://www.linkedin.com/in/shashankprasanna)<br> [medium.com/@shashankprasanna](https://www.medium.com/@shashankprasanna)    | [Twitter: @amirhos_imani](https://twitter.com/amirhos_imani)<br><br><br>      |
+| [Twitter: @shshnkp](https://twitter.com/shshnkp)<br>[linkedin.com/in/shashankprasanna](https://www.linkedin.com/in/shashankprasanna)<br> [medium.com/@shashankprasanna](https://www.medium.com/@shashankprasanna)    | [Twitter: @amirhos_imani](https://twitter.com/amirhos_imani)<br>[linkedin.com/in/aimani](https://www.linkedin.com/in/aimani/)<br><br>      |
 
 #### Workshop Overview
 **Workshop duration: 2 hours**
@@ -27,10 +27,11 @@ weight: 1
 
 #### Agenda
 
-| Topics      | Duration | Presenter |
-| ----------- | ----------| --- |
-| Workshop overview and Getting started with Amazon SageMaker Studio      | 15 mins       |  Shashank |
-| TBD  | 30 mins        | Shashank |
-| **Break**   | 15 mins        | Switch presenters |
-| TBD   | 50 mins        | Amir |
-| Wrap Up   | 10 mins        | Shashank |
+| Topics      | Duration |
+| ----------- | ----------|
+| Workshop overview and setup     | 10 mins       |  
+| Section 1: Getting started | 15 mins        |
+| Section 2.1: Problem overview and dataset preparation | 15 mins        |
+| **Break**   | 10 mins        |
+| Section 2.2: Train and fine-tune NLP models with SageMaker and HuggingFace | 50 mins        |
+| Wrap Up   | 20 mins        |

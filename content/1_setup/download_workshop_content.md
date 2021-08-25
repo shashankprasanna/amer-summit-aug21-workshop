@@ -4,6 +4,10 @@ weight: 2
 chapter: false
 ---
 
+{{% notice tip %}}
+Watch the livestream to follow along with the presenter
+{{% /notice %}}
+
 #### Open a new terminal window
 
 ![](/images/setup/setup11.png)
@@ -15,7 +19,7 @@ In the terminal paste the following command to clone the workshop content repo:
 git clone https://github.com/shashankprasanna/amer-summit-aug21-workshop.git
 ```
 
-### Double click on the `amer-summit-aug21-workshop.git` folder
+### Double click on the `amer-summit-aug21-workshop` folder
 ![](/images/setup/setup12.png)
 
 ### Double click on `notebooks` folder

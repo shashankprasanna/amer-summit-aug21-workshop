@@ -67,7 +67,7 @@ def main(args):
     logger.info(f" loaded train_dataset length is: {len(train_dataset)}")
     logger.info(f" loaded test_dataset length is: {len(test_dataset)}")
 
-    # compute metrics function for binary classification
+    # compute metrics function for classification
     def compute_metrics(pred):
         labels = pred.label_ids
         preds = pred.predictions.argmax(-1)
@@ -87,7 +87,6 @@ def main(args):
         warmup_steps                = warmup_steps,
         evaluation_strategy         = "epoch",
         logging_dir                 = f"{output_data_dir}/logs",
-        learning_rate               = float(learning_rate),
     )
 
     # create Trainer instance

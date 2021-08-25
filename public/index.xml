@@ -21,15 +21,16 @@ Click on Accept Terms &amp;amp; Login Click on Email One-Time OTP (Allow for up 
     </item>
     
     <item>
-      <title>3.1 Prepare your dataset and upload it to Amazon S3</title>
-      <link>/3_build-train-tune-deploy/prepare_dataset.html</link>
+      <title>2.1 Prepare your dataset and upload it to Amazon S3</title>
+      <link>/2_build-train-tune-deploy/prepare_dataset.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_build-train-tune-deploy/prepare_dataset.html</guid>
-      <description>Watch the livestream to follow along with the presenter
- Open the following notebook to follow along Notebook: 1_prepare_dataset.ipynb
-A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
- Preparing your dataset import sagemaker import boto3 import pandas as pd import numpy as npsess = boto3.Session() sagemaker_session = sagemaker.</description>
+      <guid>/2_build-train-tune-deploy/prepare_dataset.html</guid>
+      <description>Open the following notebook to follow along Notebook: 1_prepare_dataset.ipynb
+Watch the livestream to follow along with the presenter
+ Let&amp;rsquo;s start by importing necessary packages. We&amp;rsquo;ll use sagemaker and boto3 to access Amazon S3 and numpy and pandas to pre-process the dataset
+import sagemaker import boto3 import pandas as pd import numpy as np Create a sagemaker session and get access to the current role
+sess = boto3.Session() sagemaker_session = sagemaker.</description>
     </item>
     
     <item>
@@ -50,31 +51,41 @@ A copy of the code from the notebook is also available below, if you prefer buil
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/1_setup/download_workshop_content.html</guid>
-      <description> Open a new terminal window Clone the workshop content In the terminal paste the following command to clone the workshop content repo:
-git clone https://github.com/shashankprasanna/amer-summit-aug21-workshop.git  Double click on the amer-summit-aug21-workshop.git folder Double click on notebooks folder Double click on the the first notebook Choose the Python 3 (Data Science kernel) and hit select </description>
+      <description> Watch the livestream to follow along with the presenter
+ Open a new terminal window Clone the workshop content In the terminal paste the following command to clone the workshop content repo:
+git clone https://github.com/shashankprasanna/amer-summit-aug21-workshop.git  Double click on the amer-summit-aug21-workshop folder Double click on notebooks folder Double click on the the first notebook Choose the Python 3 (Data Science kernel) and hit select </description>
     </item>
     
     <item>
-      <title>3.2 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
-      <link>/3_build-train-tune-deploy/finetune_huggingface.html</link>
+      <title>2.2 How Amazon SageMaker and HuggingFace work together</title>
+      <link>/2_build-train-tune-deploy/how-it-works.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/3_build-train-tune-deploy/finetune_huggingface.html</guid>
-      <description>Watch the livestream to follow along with the presenter
- Open the following notebook to follow along Notebook: 2_finetune_deploy_huggingface
-A copy of the code from the notebook is also available below, if you prefer building your notebook from scratch by copy pasting each code cell and then running them.
+      <guid>/2_build-train-tune-deploy/how-it-works.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>2.3 Train and fine-tune NLP models with SageMaker and HuggingFace library</title>
+      <link>/2_build-train-tune-deploy/finetune_huggingface.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/2_build-train-tune-deploy/finetune_huggingface.html</guid>
+      <description>Open the following notebook to follow along Notebook: 2_finetune_deploy_huggingface
+Watch the livestream to follow along with the presenter
  Finetuning HuggingFace models with Amazon SageMaker
-# Install or upgrade sagemaker sdk and sagemaker debugger sdk # Ignore warnings related to pip !</description>
+Install or upgrade sagemaker sdk and sagemaker debugger sdk
+!pip install -Uq sagemaker smdebug # Ignore warnings related to pipimport boto3 import time import numpy as np import pandas as pd import json from datetime import datetime as dt from IPython.display import FileLink import sagemaker from sagemaker import TrainingJobAnalytics from sagemaker.</description>
     </item>
     
     <item>
       <title>Delete all resources</title>
-      <link>/4_clean-up/cleanup.html</link>
+      <link>/3_clean-up/cleanup.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/4_clean-up/cleanup.html</guid>
+      <guid>/3_clean-up/cleanup.html</guid>
       <description>This workshop creates the following resources:
- SageMaker Endpoints S3 objects SageMaker apps  If you completed section 3.1, the &amp;ldquo;Delete resources&amp;rdquo; section at the end deletes running SageMaker Endpoints and all S3 objects created during the workshop.
+ SageMaker Endpoints S3 objects SageMaker apps  If you completed section 2.2, the &amp;ldquo;Delete resources&amp;rdquo; section at the end deletes running SageMaker Endpoints and all S3 objects created during the workshop.
 You can also delete the endpoints by navigating to AWS Console &amp;gt; Amazon SageMaker. In the left menu click on Inference &amp;gt; Endpoints. Select the endpoint you want to delete and click on Action &amp;gt; Delete.</description>
     </item>
     

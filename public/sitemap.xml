@@ -7,7 +7,7 @@
   </url>
   
   <url>
-    <loc>/3_build-train-tune-deploy/prepare_dataset.html</loc>
+    <loc>/2_build-train-tune-deploy/prepare_dataset.html</loc>
   </url>
   
   <url>
@@ -31,15 +31,19 @@
   </url>
   
   <url>
-    <loc>/3_build-train-tune-deploy/finetune_huggingface.html</loc>
+    <loc>/2_build-train-tune-deploy/how-it-works.html</loc>
   </url>
   
   <url>
-    <loc>/4_clean-up/cleanup.html</loc>
+    <loc>/2_build-train-tune-deploy/finetune_huggingface.html</loc>
   </url>
   
   <url>
-    <loc>/3_build-train-tune-deploy.html</loc>
+    <loc>/3_clean-up/cleanup.html</loc>
+  </url>
+  
+  <url>
+    <loc>/2_build-train-tune-deploy.html</loc>
   </url>
   
   <url>
@@ -51,7 +55,7 @@
   </url>
   
   <url>
-    <loc>/4_clean-up.html</loc>
+    <loc>/3_clean-up.html</loc>
   </url>
   
   <url>

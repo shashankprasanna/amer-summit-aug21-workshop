@@ -30,8 +30,7 @@ weight: 1
 | Topics      | Duration |
 | ----------- | ----------|
 | Workshop overview and setup     | 10 mins       |  
-| Section 1: Getting started | 15 mins        |
-| Section 2.1: Problem overview and dataset preparation | 15 mins        |
-| **Break**   | 10 mins        |
-| Section 2.2: Train and fine-tune NLP models with SageMaker and HuggingFace | 50 mins        |
+| Getting started | 15 mins        |
+| Problem overview and dataset preparation | 15 mins        |
+| Train and fine-tune NLP models with SageMaker and HuggingFace | 60 mins        |
 | Wrap Up   | 20 mins        |

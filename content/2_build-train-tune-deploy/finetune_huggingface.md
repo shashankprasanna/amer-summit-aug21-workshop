@@ -1,5 +1,5 @@
 ---
-title: "2.2 Train and fine-tune NLP models with SageMaker and HuggingFace library"
+title: "2.3 Train and fine-tune NLP models with SageMaker and HuggingFace library"
 weight: 2
 ---
 

@@ -8,9 +8,9 @@ weight: 1
 
 #### Presenters
 
-| Shashank Prasanna, <br>Sr. Developer Advocate, AI/ML      | Amir Imani,<br>AI/ML Specialist SA |
-| ----------- | ----------- |
-| [Twitter: @shshnkp](https://twitter.com/shshnkp)<br>[linkedin.com/in/shashankprasanna](https://www.linkedin.com/in/shashankprasanna)<br> [medium.com/@shashankprasanna](https://www.medium.com/@shashankprasanna)    | [Twitter: @amirhos_imani](https://twitter.com/amirhos_imani)<br>[linkedin.com/in/aimani](https://www.linkedin.com/in/aimani/)<br><br>      |
+| Shashank Prasanna, <br>Sr. Developer Advocate, AI/ML      |
+| ----------- |
+| **Twitter:** [@shshnkp](https://twitter.com/shshnkp)<br>**LinkedIn:** [linkedin.com/in/shashankprasanna](https://www.linkedin.com/in/shashankprasanna)<br> **Blog:** [medium.com/@shashankprasanna](https://www.medium.com/@shashankprasanna)    |
 
 #### Workshop Overview
 **Workshop duration: 2 hours**

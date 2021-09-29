@@ -11,7 +11,7 @@ Notebook: `1_prepare_dataset.ipynb`
 ![](/images/setup/setup14.png)
 
 {{% notice tip %}}
-Watch the livestream to follow along with the presenter
+Feel free to follow along with the presenter on the stage
 {{% /notice %}}
 
 Let's start by importing necessary packages.

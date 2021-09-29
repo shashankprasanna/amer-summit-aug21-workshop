@@ -11,7 +11,7 @@ Notebook: `2_finetune_deploy_huggingface`
 ![](/images/setup/setup16.png)
 
 {{% notice tip %}}
-Watch the livestream to follow along with the presenter
+Feel free to follow along with the presenter on the stage
 {{% /notice %}}
 
 Finetuning HuggingFace models with Amazon SageMaker

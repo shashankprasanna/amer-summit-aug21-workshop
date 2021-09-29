@@ -5,7 +5,7 @@ chapter: false
 ---
 
 {{% notice tip %}}
-Watch the livestream to follow along with the presenter
+Feel free to follow along with the presenter on the stage
 {{% /notice %}}
 
 #### Open a new terminal window
